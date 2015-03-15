@@ -8,7 +8,7 @@ namespace Owin.Security.Providers.Trello
 {
     public static class TrelloAuthenticationExtensions
     {
-        private static IAppBuilder UseTrelloAuthentication( this IAppBuilder app, TrelloAuthenticationOptions options )
+        public static IAppBuilder UseTrelloAuthentication( this IAppBuilder app, TrelloAuthenticationOptions options )
         {
             if ( app == null )
                 throw new ArgumentNullException( "app" );
