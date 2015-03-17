@@ -12,11 +12,7 @@ Install via NuGet:
 
 Before you can use this provider you need an API key from Trello. Refer to the [Trello documentation](https://trello.com/docs/gettingstarted/index.html#getting-an-application-key) for instructions on how to get an API key.
 
-In `Startup.Auth.cs` add the following using statement:
-
-    using Owin.Security.Providers.Trello;
-
-Then in the `ConfigureAuth` method enable the Trello provider:
+Once you have a key/secret just enable the Trello provider in your OWIN authentication configuration:
 
     app.UseTrelloAuthentication(
         key: "YourTrelloApiKey",

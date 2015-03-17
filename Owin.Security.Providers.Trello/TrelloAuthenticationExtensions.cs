@@ -1,10 +1,11 @@
-﻿using System;
+﻿using Owin.Security.Providers.Trello;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Owin.Security.Providers.Trello
+namespace Owin
 {
     public static class TrelloAuthenticationExtensions
     {

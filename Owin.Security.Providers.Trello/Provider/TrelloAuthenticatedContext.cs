@@ -14,6 +14,7 @@ namespace Owin.Security.Providers.Trello.Provider
     {
         public string Id { get; set; }
         public string Username { get; set; }
+        public string Email { get; set; }
         public string AccessToken { get; private set; }
         public string AccessTokenSecret { get; private set; }
         public JObject User { get; private set; }
@@ -26,6 +27,7 @@ namespace Owin.Security.Providers.Trello.Provider
             User = user;
             Id = TryGetValue( User, "id" );
             Username = TryGetValue( User, "username" );
+            Email = TryGetValue( User, "email" );
             AccessToken = accessToken;
             AccessTokenSecret = accessTokenSecret;
         }

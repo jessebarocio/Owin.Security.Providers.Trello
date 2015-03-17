@@ -34,7 +34,7 @@ namespace Owin.Security.Providers.Trello
         public Expiration Expiration { get; set; }
 
         public TrelloAuthenticationOptions( string key, string secret, string applicationName, 
-            Scope scope = Scope.ReadWrite, Expiration expiration = Expiration.Never )
+            Scope scope = Scope.ReadWriteAccount, Expiration expiration = Expiration.Never )
             : base( "Trello" )
         {
             // User settings

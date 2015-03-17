@@ -104,6 +104,7 @@ namespace Owin.Security.Providers.Trello
                     {
                         new Claim(ClaimTypes.NameIdentifier, context.Id, XmlSchemaString, Options.AuthenticationType),
                         new Claim(ClaimTypes.Name, context.Username, XmlSchemaString, Options.AuthenticationType),
+                        new Claim(ClaimTypes.Email, context.Email, XmlSchemaString, Options.AuthenticationType),
                         new Claim("urn:trello:id", context.Id, XmlSchemaString, Options.AuthenticationType),
                         new Claim("urn:trello:username", context.Username, XmlSchemaString, Options.AuthenticationType)
                     },
